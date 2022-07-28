@@ -1,0 +1,857 @@
+//google fonts import
+
+// common css
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    transition: all linear .3s;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: auto;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: #fff;
+    
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.2;
+
+}
+
+p {
+    line-height: 1;
+    font-family: 'sequelSans', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-size: 20px;
+        font-family: 'championHTF', sans-serif;
+        color: #fff;
+
+        span {
+            display: block !important;
+            padding-top: 8px;
+        }
+    }
+}
+
+h2.title {
+    font-size: 42px;
+    text-align: center;
+    font-family: 'championHTF', sans-serif;
+    font-weight: 900;
+}
+
+dt.list_title {
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-family: 'championHTF', sans-serif;
+
+    span {
+        float: right;
+    }
+}
+
+dd.list_detail {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'sequelSans', sans-serif;
+    margin-top: 12px;
+
+    img {
+        height: 20px;
+    }
+
+    span {
+        float: right;
+    }
+}
+
+.footer {
+    padding: 60px 0 30px 0;
+
+    p {
+        font-size: 13px;
+        font-family: 'sequelSans', sans-serif;
+        text-align: center;
+        line-height: 1.2;
+
+        span {
+            display: block;
+            margin-top: 7px;
+        }
+    }
+
+    h5 {
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'championHTF', sans-serif;
+        text-align: center;
+        margin-top: 25px;
+
+        img {
+            height: 15px;
+        }
+    }
+}
+
+// heading font
+@font-face {
+    font-family: 'championHTF', sans-serif;
+    src: url(../fonts/ChampionHTF_Featherweight_Regular.otf);
+}
+
+// paragraph font
+@font-face {
+    font-family: 'sequelSans', sans-serif;
+    src: url(../fonts/SequelSansLightBody.ttf);
+}
+
+//common css end
+
+// hero start
+#hero {
+
+    .hero_cont {
+        background-image: url(../image/hero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 1200px;
+
+        // height: 2550px;
+        .hero_item {
+            text-align: center;
+
+            h3 {
+                font-size: 60px;
+                color: #fff;
+                margin-top: 40px;
+                font-family: 'championHTF', sans-serif;
+                font-weight: 900;
+            }
+
+            h1 {
+                font-size: 120px;
+                text-transform: uppercase;
+                color: #fff;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-family: 'championHTF', sans-serif;
+                font-weight: 900;
+
+                img {
+                    height: 85px;
+
+                    &:first-child {
+                        margin-right: 5px;
+                    }
+
+                    &:last-child {
+                        margin-left: -23px;
+                    }
+                }
+            }
+
+            h4 {
+                color: #fff;
+                font-size: 60px;
+                text-transform: uppercase;
+                font-family: 'championHTF', sans-serif;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+//hero end
+
+// breakfast sandwiches start
+#breakfast_sandwiches {
+    margin-top: 10px;
+
+    .breakfast_cont {
+        box-shadow: 0 0 3px #c6c6c6;
+
+        .banner {
+            background-image: url(../image/breakfast-sandwich.jpg);
+            padding-top: 160px;
+            padding-bottom: 32px;
+            min-height: 320px;
+            padding-left: 30px;
+
+        }
+
+        .breakfast_item {
+            padding: 35px 55px;
+
+            .list {
+                margin-top: 20px;
+            }
+
+            .craft {
+                padding: 30px 35px;
+                background-color: #f1ebe5;
+                border-radius: 14px;
+                margin-top: 45px;
+
+                .craft_cont {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+
+                    .craft_item {
+                        flex-basis: 33%;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            height: 80%;
+                            width: 1px;
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 0;
+                            right: 60px;
+                        }
+
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+
+                        h4 {
+                            font-weight: 700;
+                            font-size: 14px;
+                            font-family: 'championHTF', sans-serif;
+                            margin-bottom: 20px;
+                        }
+
+                        ul {
+                            margin-top: 15px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .footer {
+            h4 {
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'championHTF', sans-serif;
+                text-align: center;
+                margin-bottom: 60px;
+
+                span {
+                    display: block;
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+//breakfast wrapes start
+#breakfast_wraps {
+    margin-top: 10px;
+
+    .banner {
+        padding: 40px 0 170px 40px;
+        background-image: url(../image/breakfast-wrap.jpg);
+
+    }
+
+    .wraper_cont {
+        box-shadow: 0 0 3px #c6c6c6;
+
+        .wraper_item {
+            padding: 40px 70px 0 70px;
+
+            dl {
+                margin-top: 17px;
+
+                dt {
+                    span {
+                        float: inherit;
+                        display: block;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+//sandwiches start
+#sandwiches {
+    margin-top: 10px;
+
+    .banner {
+        padding: 60px 0 210px 40px;
+        background-image: url(../image/sandwiches.jpg);
+    }
+
+    .sandwiches_cont {
+        padding: 25px 70px 35px 70px;
+        box-shadow: 0 0 3px #c6c6c6;
+
+        .new_sanwiches {
+            .new_cont {
+                margin-top: 15px;
+                padding: 15px;
+                background-color: #f1ebe5;
+                border-radius: 14px;
+
+                dl {
+                    dt {
+                        color: #48691b;
+                    }
+
+                    dd {
+                        small {
+                            font-style: italic;
+                            background-color: #b0d600;
+                            padding: 6px;
+                            border-radius: 3px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                &>p {
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-top: 15px;
+
+                    span {
+                        font-weight: 900;
+                    }
+                }
+            }
+
+        }
+
+        .sandwiches_list_item {
+            margin-top: 20px;
+        }
+
+        .footer {
+            padding: 0;
+
+            h5 {
+                span {
+                    display: inline list-item;
+                }
+            }
+
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+//soup start
+#soup {
+    margin-top: 10px;
+
+    .banner {
+        padding: 45px 0px 195px 40px;
+        background: url(../image/soups.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .soup_cont {
+        padding: 40px 70px 0 70px;
+        box-shadow: 0 0 3px #c6c6c6;
+
+        .soup_item {
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            dl {
+                margin-top: 20px;
+
+                dt.list_title span {
+                    display: flex;
+                    text-align: right;
+                }
+
+                dt.list_title.multiple {
+                    display: flex;
+                    justify-content: right;
+                    align-content: flex-end;
+                    gap: 25px;
+
+                    span {
+                        float: inherit;
+                        text-align: right;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        position: relative;
+                        font-size: 16px;
+
+                        &::after {
+                            content: '';
+                            height: 100%;
+                            width: 1px;
+                            background-color: #000;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -5px;
+                        }
+
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .new {
+                    padding: 12px;
+                    background-color: #f1ebe5;
+                    border-radius: 6px;
+                    margin-top: 20px;
+
+                }
+
+                dd.list_detail {
+                    display: flex;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    .menu {
+                        flex-basis: 69%;
+                    }
+
+                    .cal {
+                        flex-basis: 31%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            flex-basis: 33%;
+
+                            &:last-child {
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    .menu,
+                    .cal {
+                        small {
+                            font-style: italic;
+                            background-color: #b0d600;
+                            padding: 6px;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .reg_wrap {
+            margin-top: 40px;
+
+            h2 {
+                sup {
+                    font-size: 10px;
+                    position: absolute;
+                }
+            }
+
+            dt.list_title.mac span {
+                float: inherit;
+                display: block;
+                text-align: right;
+            }
+
+            .kids_wrap {
+                display: flex;
+                justify-content: space-between;
+
+                dl {
+                    flex-basis: 47%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        h6 {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.2;
+
+            sup {
+                font-size: 8px;
+            }
+
+            span {
+                display: inline list-item;
+            }
+        }
+
+        p {
+            margin-top: 30px;
+        }
+    }
+}
+
+//pizza start
+#pizza {
+    margin-top: 10px;
+
+    .banner {
+        padding: 200px 0 40px 40px;
+        background-image: url(../image/pizza.jpg);
+    }
+
+    .pizza_cont {
+        padding: 35px 70px 0 70px;
+        box-shadow: 0 0 3px #c6c6c6;
+
+        .pizza_item {
+            margin-top: 65px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            dl {
+                dt.list_title span {
+                    float: inherit;
+                    display: block;
+                    text-align: right;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-top: 20px;
+
+                    span {
+                        font-weight: 900;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .footer {
+
+            h6,
+            h5 {
+                font-size: 15px;
+                text-align: center;
+                line-height: 1.2;
+
+                span {
+                    display: inline list-item;
+                }
+            }
+
+            h5 {
+                margin-top: 15px;
+            }
+
+            p {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+//beverage1 start
+#beverage1 {
+    margin-top: 10px;  
+}
+.beverage_cont {
+    padding: 40px 70px;
+    box-shadow: 0 0 3px #c6c6c6;
+    .beverage_item {
+        display: flex;
+        background-color: #f1ebe5;
+        border-radius: 20px;
+        margin-top: 25px;
+
+        .left_img {
+            img {
+                height: 100%;
+                width: 235px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+
+            }
+        }
+
+        .detail {
+            padding: 35px 25px;
+            flex-basis: 70%;
+            h3 {
+                font-size: 36px;
+                font-family: 'championHTF', sans-serif;
+                font-weight: 800;
+                small{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+            &.coffe-tea{
+                
+                dl{
+                dt.list_title {
+                    font-size: 14px;
+                    span {
+                        float: inherit;
+                        display: block;
+                        text-align: right;
+                    }
+                }
+                dd.list_detail{
+                    margin-top: 14px;
+                    font-size: 18px;
+                    small{
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &.speciality{
+                dt.list_title{
+                    display: flex;
+                    justify-content: right;
+                    gap: 25px;
+                }
+                dd.list_detail{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0;
+                    
+                    .cal{                                                      
+                        display: flex;
+                        gap: 70px;
+                    }
+                }
+            }
+            }
+          
+        }
+    }
+    .footer{
+        padding-top: 22px;
+        padding-bottom: 0;
+    }
+}
+
+//beverage 2
+#beverage2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .beverage_item{
+        .detail{
+            h4{
+                font-size: 14px;
+                font-family: 'championHTF', sans-serif;
+                line-height: 1.1;
+                margin-top: 7px;
+            }
+            h5{
+                font-size: 16px;
+                font-family: 'championHTF', sans-serif;
+                margin-top: 7px;
+            }
+            dl{
+                dd.list_detail{
+                    small{
+                        padding: 4px;
+                        border-radius: 3px;
+                        background-color: #b0d600;
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &.smoothi{
+                dl {
+                    margin-top: 15px;
+                    dt.list_title span{
+                        float: right;
+                    }
+                }
+            }
+            &.frozen{
+                dl {
+                    margin-top: 15px;
+                    dt.list_title span{
+                        float: inherit;
+                    }
+                    dd.list_detail{
+                        small{
+                            color: #b0d600;
+                            background-color: transparent;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//more way start
+#more{
+    
+    .banner{
+        background-image: url(../image/more-way.jpg);
+        height: 325px;
+        width: 100%;
+    }
+    .more_cont{
+        padding:45px 70px 0 70px;
+        box-shadow: 0 0 3px #c6c6c6;
+        margin-bottom: 20px;
+        .title{
+            font-size: 53px;
+        }
+        .more_item{
+            margin-top: 30px;
+            display: flex;
+            gap: 35px;
+            .left_img{
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+            .right_txt{
+                padding-top: 15px;
+                h4{
+                    font-size: 24px;
+                    color: #48691b;
+                    font-weight: 900 !important;
+                    font-family: 'championHTF', sans-serif;
+                }
+                p{
+                    margin-top: 12px;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .app{
+            padding-left: 135px;
+            padding-top: 30px;
+            h5{
+                font-size: 21px;
+            a{
+                font-weight: 700;
+                color: #000;                
+            }
+                      
+        }
+        h6{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'sequelSans', sans-serif;
+            margin-top: 10px;
+        }
+        }
+        #footer{
+            padding: 45px 0;
+            p{
+                font-size: 12px;
+                line-height: 1.2;
+            }
+            h4{
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 10px;
+                line-height: 1.2;
+                a{
+                    color: #000;
+                }
+            }
+            .copyright{
+                margin-top: 35px;
+                h3{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                h4{
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
